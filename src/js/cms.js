@@ -12,7 +12,7 @@ import ContactPreview from "./cms-preview-templates/contact";
 class ColorControl extends React.Component {
   render() {
     return <input
-        style={{height: "180px"}}
+        style={{height: "80px"}}
         type="color"
         value={this.props.value}
         onInput={(e) => this.props.onChange(e.target.value)}
@@ -22,7 +22,6 @@ class ColorControl extends React.Component {
 
 CMS.registerPreviewStyle("/css/main.css");
 CMS.registerPreviewTemplate("home", HomePreview);
-CMS.registerPreviewTemplate("post", PostPreview);
 CMS.registerPreviewTemplate("products", ProductsPreview);
 CMS.registerPreviewTemplate("values", ValuesPreview);
 CMS.registerPreviewTemplate("contact", ContactPreview);
